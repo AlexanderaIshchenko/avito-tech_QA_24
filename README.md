@@ -17,7 +17,7 @@
 ### Склонируйте репозиторий
 Вы можете клонировать репозиторий с помощью команды git:
 ```
-git clone https://github.com/AlexanderaIshchenko/avito-tech_QA.git
+git clone https://github.com/AlexanderaIshchenko/avito-tech_QA_24.git
 ```
 ### Создать виртуальное окружение 
 ```
