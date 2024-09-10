@@ -32,6 +32,47 @@ git clone https://github.com/AlexanderaIshchenko/avito-tech_QA_24.git
 pip install pytest-playwright
 playwright install
 ```
+### Скачайте ChromeDriver
+__Для Windows__  
+1. Скачайте [ChromeDriver](https://storage.googleapis.com/chrome-for-testing-public/128.0.6613.119/win64/chrome-win64.zip).    
+2. Разархивируйте его и положите файл `chromedriver.exe` в удобную директорию, например `C:\Users\mirov\Downloads\`.  
+3. Добавьте путь к ChromeDriver в переменные среды:  
+* Перейдите в "Параметры системы" → "Дополнительные параметры системы" → "Переменные среды".  
+* В разделе "Переменные пользователя" найдите переменную `PATH` и добавьте путь к папке с `chromedriver.exe`.  
+4. После этого проверьте снова:  
+```
+chromedriver --version
+```  
+Если все настроено правильно, эта команда должна показать версию установленного ChromeDriver.  
+***
+__Для Mac__  
+
+Выполните следующие команды в терминале, чтобы установить ChromeDriver:
+```
+brew install chromedriver
+```
+Добавление в PATH (если путь не настроен):  
+* После установки ChromeDriver его нужно добавить в `PATH`.
+
+Откройте файл `~/.bashrc` (или `~/.bash_profile`):
+```
+nano ~/.bashrc
+```
+Добавьте строку:  
+```
+export PATH=$PATH:/path/to/chromedriver
+```
+Замените `/path/to/chromedriver` на фактический путь к ChromeDriver.  
+
+Примените изменения:  
+```
+source ~/.bashrc
+```
+После этого проверьте снова:  
+```
+chromedriver --version
+```
+
 ### Запустить тесты
 
 После успешной установки зависимостей выполните следующие действрия для запуска тестов:
