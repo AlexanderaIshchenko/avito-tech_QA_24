@@ -34,7 +34,7 @@ playwright install
 ```
 ### Скачайте ChromeDriver
 __Для Windows__  
-1. Скачайте [ChromeDriver]([https://storage.googleapis.com/chrome-for-testing-public/128.0.6613.119/win64/chrome-win64.zip](https://googlechromelabs.github.io/chrome-for-testing/#stable)).    
+1. Скачайте [ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/#stable).    
 2. Разархивируйте его и положите файл `chromedriver.exe` в удобную директорию, например `C:\Users\mirov\Downloads\`.  
 3. Добавьте путь к ChromeDriver в переменные среды:  
 * Перейдите в "Параметры системы" → "Дополнительные параметры системы" → "Переменные среды".  
