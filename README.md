@@ -1,16 +1,28 @@
 # avito-tech_QA_24
+
+### Описание
+Данный проект содержит ответы на два [задания](https://gitverse.ru/avito.tech/tech-internship/content/main/Tech%20Internships%20/QA/Тестовое%20задание_осень%202024/qa-trainee-assignment-autmumn-2024.md) стажировки 
+1) Ранжированный список багов со страницы 
+2) Автоматизированные тесты для веб-приложения, реализующего сборник игр по различным жанрам. Тесты проверяют функциональность фильтрации по категориям, возврат на главную страницу и пагинацию результатов поиска.
+
 ### В репозитории содержатся файлы:
 1) Папка task_2, - второе задание проекта
-   - TESTCASES.md - тест-кейсы на пользовательские сценарии
-   - auto_tests.ru - сам файл с автотестами
    - BUGS.md - баг-репорты
+   - TESTCASES.md - тест-кейсы на пользовательские сценарии
+   - asserts.py - проверки и ожидания для тестов 
+   - auto_tests.py - сам файл с автотестами
+   - conftest.py - сонфигурация браузера
+   - locators.py - селекторы для тестов
+   - main_page - основные функции для тестов
+   - requirements.txt - необходимые зависимости 
+   
 3) task_1.md - первое задание проекта
 
 # Инструкция по запуску тестов Avito
 ### Установить:
 1) Python с пакетный менеджер pip
    - Если у вас нет Python, скачайте и установите его с [официального сайта Python](https://www.python.org/). Рекомендуется использовать версию Python 3.7 или выше.
-2) Браузер, совместимый с Playwright (по умолчанию, Chromium)
+2) Браузер, совместимый с selenium (по умолчанию, Chromium)
    - Если у вас нет, скачайте и установите его [Chrome](https://googlechromelabs.github.io/chrome-for-testing/#stable).
 
 
@@ -27,10 +39,9 @@ git clone https://github.com/AlexanderaIshchenko/avito-tech_QA_24.git
 ```
 'source venv/Script/activate'
 ```
-### Установите pytest-playwright
+### Установите pytest
 ```
-pip install pytest-playwright
-playwright install
+pip install pytest
 ```
 ### Скачайте ChromeDriver
 __Для Windows__  
@@ -73,6 +84,15 @@ source ~/.bashrc
 chromedriver --version
 ```
 
+### Установите необходимые зависимости из файла requirements.txt выполнив команду
+```
+pip install -r requirements.txt
+```
+если она не выполняется, то попробуйте
+```
+pip3 install -r requirements.txt
+```
+
 ### Запустить тесты
 
 После успешной установки зависимостей выполните следующие действрия для запуска тестов:
@@ -80,6 +100,6 @@ chromedriver --version
 2) Перейдите в каталог с репозиторием, используя команду 'cd'
 3) Запустите тест, выполнив соответсвующий python файл:
 ```
-pytest test_auto_backend.py
+pytest pytest -v auto_tests.py
 ```
 Это запустит все тесты в файле по очереди
