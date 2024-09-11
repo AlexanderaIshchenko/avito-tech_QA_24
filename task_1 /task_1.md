@@ -35,4 +35,5 @@
 12|![image](https://github.com/user-attachments/assets/6bc1a049-7cc7-48f5-bdcc-5ccde914b01b)|Сместилось фото из-за лейбла "только на авито" |  medium
 13|![image](https://github.com/user-attachments/assets/2b594e76-ddbf-497f-9eb3-02a25e480c43)|В объявлении BMW x6 3.0 AT 2022 (белого цвета) метка "Соотвествует оценке" показывается под карточкой объявления | low
 14|![image](https://github.com/user-attachments/assets/b93155fe-dd1c-452b-a8e7-143a906c1294)|Указан некорректный адрес | low
+15|![image](https://github.com/user-attachments/assets/ef8c8368-6eb0-43e7-97f4-61bf51d5c4e0)|Неверное склонение в дате публикации| low
  
